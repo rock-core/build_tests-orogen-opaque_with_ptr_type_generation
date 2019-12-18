@@ -1,0 +1,19 @@
+name "opaque_with_ptr_type_generation"
+# Optionally declare the version number
+# version "0.1"
+
+# If this project uses data types that are defined in other oroGen projects,
+# these projects should be imported there as well.
+import_types_from "wrapperTypes.hpp"
+
+# If this project uses data types that are defined in other oroGen projects,
+# these projects should be imported there as well.
+import_types_from "std"
+
+typekit do
+    type_export_policy :selected
+    opaque_type '/std/vector<double*>',
+        '/wrapper/ListOfDouble', :includes => "vector"
+    export_types '/std/vector<double*>', '/wrapper/ListOfDouble'
+end
+

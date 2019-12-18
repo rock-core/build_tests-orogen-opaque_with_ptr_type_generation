@@ -1,0 +1,9 @@
+<package>
+  <description brief="Test opaque handling for a type that includes pointers">
+  </description>
+  <author>Thomas Roehr/thomas.roehr@dfki.de</author>
+  <license></license>
+  <url>http://</url>
+  <logo>http://</logo>
+  <depend package="base/orogen/std" />
+</package>
